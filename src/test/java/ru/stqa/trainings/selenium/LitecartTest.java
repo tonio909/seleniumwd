@@ -9,7 +9,6 @@ public class LitecartTest extends TestBase {
     public void litecartLogin() throws InterruptedException {
 
         adminLogin();
-
         adminLogout();
 
     }
