@@ -21,7 +21,6 @@ import java.util.concurrent.TimeUnit;
 
 public class TestBase {
 
-    public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
     public WebDriver driver;
     public WebDriverWait wait;
 
@@ -34,6 +33,7 @@ public class TestBase {
         options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
         options.addArguments("start-maximized");
         driver = new ChromeDriver(options);
+        wait = new WebDriverWait(driver, 10);
         */
 
         //Capabilities
@@ -50,7 +50,7 @@ public class TestBase {
         caps.setJavascriptEnabled(true);
         caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "C:\\Program Files\\PhantomJS\\bin\\phantomjs.exe");
         driver = new PhantomJSDriver(caps);
-        driver.manage().timeouts().implicitlyWait(500, TimeUnit.MILLISECONDS);
+        wait = new WebDriverWait(driver, 10);
         */
 
         //Запуск Firefox ESR
@@ -71,6 +71,9 @@ public class TestBase {
                 new FirefoxProfile(), caps);
         wait = new WebDriverWait(driver, 10);
         */
+
+        driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(500, TimeUnit.MILLISECONDS);
     }
 
     @After
@@ -83,12 +86,11 @@ public class TestBase {
         driver.navigate().to("http://localhost/litecart/admin/");
         driver.findElement(By.name("username")).sendKeys("admin");
         driver.findElement(By.name("password")).sendKeys("admin");
-        driver.findElement(By.xpath("//input[@name='remember_me']")).click();
         driver.findElement(By.xpath("//button[@name='login']")).click();
     }
 
     public void adminLogout() {
-        driver.findElement(By.xpath("//*[@id='sidebar']/div[2]/a[5]/i")).click();
+        driver.findElement(By.cssSelector(".fa.fa-sign-out.fa-lg")).click();
     }
 
     public void goToHomepage() {
