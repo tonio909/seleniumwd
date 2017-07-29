@@ -7,19 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ab525eb-634b-4e05-b59c-f6a0f62ff721" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_beust_jcommander_1_64.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_testng_testng_6_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_yaml_snakeyaml_1_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminLeftMenu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/VerifyStickers.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/classes/ru/stqa/trainings/selenium/LitecartTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/LitecartTest.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/CountriesZonesTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/VerifyProductsTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/classes/ru/stqa/trainings/selenium/ClickAdminLeftMenu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/classes/ru/stqa/trainings/selenium/VerifyStickers.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/ru/stqa/trainings/selenium/TestBase.class" afterPath="$PROJECT_DIR$/out/test/classes/ru/stqa/trainings/selenium/TestBase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/seleniumwd_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/seleniumwd_test.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/seleniumwd_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/seleniumwd_main.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phantomjsdriver.log" afterPath="$PROJECT_DIR$/phantomjsdriver.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/TestBase.java" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/TestBase.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminLeftMenu.java" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminMenuTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/VerifyStickers.java" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/VerifyStickersTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -72,11 +70,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ClickAdminLeftMenu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminLeftMenu.java">
+      <file leaf-file-name="ClickAdminMenuTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminMenuTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="69" lean-forward="true" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+            <state relative-caret-position="546">
+              <caret line="30" column="105" lean-forward="false" selection-start-line="30" selection-start-column="90" selection-end-line="30" selection-end-column="105" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,11 +82,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VerifyStickers.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/VerifyStickers.java">
+      <file leaf-file-name="CountriesZonesTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/CountriesZonesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="1134">
+              <caret line="61" column="81" lean-forward="false" selection-start-line="61" selection-start-column="81" selection-end-line="61" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VerifyProductsTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/VerifyProductsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1491">
+              <caret line="71" column="102" lean-forward="true" selection-start-line="71" selection-start-column="102" selection-end-line="71" selection-end-column="102" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,8 +107,8 @@
       <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="74" column="34" lean-forward="false" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
+            <state relative-caret-position="1197">
+              <caret line="74" column="33" lean-forward="false" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -301,8 +309,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3001359173119" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="990142797" />
+        <entry key="$PROJECT_DIR$" value="3001636716142" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="4171936604" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="1253453487" />
       </map>
     </option>
@@ -480,15 +488,17 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/LitecartHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/StickerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/StickerTests.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/LitecartTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/VerifyStickers.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminLeftMenu.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/VerifyProductsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/CountriesZonesTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1" />
     <option name="width" value="1363" />
     <option name="height" value="728" />
@@ -511,10 +521,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -552,6 +560,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -573,8 +583,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="ClickAdminLeftMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.VerifyProductsTest">
+    <configuration name="ClickAdminMenuTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="ru.stqa.trainings.selenium.*" />
@@ -585,7 +595,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="ru.stqa.trainings.selenium" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.trainings.selenium.ClickAdminLeftMenu" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.trainings.selenium.ClickAdminMenuTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -599,7 +609,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="ClickAdminLeftMenu.testClickAdminLeftMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CountriesZonesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="ru.stqa.trainings.selenium.*" />
@@ -610,8 +620,33 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="ru.stqa.trainings.selenium" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.trainings.selenium.ClickAdminLeftMenu" />
-      <option name="METHOD_NAME" value="testClickAdminLeftMenu" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.trainings.selenium.CountriesZonesTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="CountriesZonesTest.testCountriesSorting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.trainings.selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="seleniumwd_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ru.stqa.trainings.selenium" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.trainings.selenium.CountriesZonesTest" />
+      <option name="METHOD_NAME" value="testCountriesSorting" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -624,39 +659,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="StickerTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.trainings.selenium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="seleniumwd_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="ru.stqa.trainings.selenium" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.trainings.selenium.StickerTest" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="StickerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VerifyProductsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="ru.stqa.trainings.selenium.*" />
@@ -667,7 +670,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="ru.stqa.trainings.selenium" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.trainings.selenium.StickerTests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.trainings.selenium.VerifyProductsTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -681,7 +684,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="VerifyStickers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VerifyProductsTest.testVerifyProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="ru.stqa.trainings.selenium.*" />
@@ -692,9 +695,9 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="ru.stqa.trainings.selenium" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.trainings.selenium.VerifyStickers" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.trainings.selenium.VerifyProductsTest" />
+      <option name="METHOD_NAME" value="testVerifyProducts" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -904,19 +907,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ClickAdminLeftMenu" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.StickerTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.StickerTests" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.VerifyStickers" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ClickAdminLeftMenu.testClickAdminLeftMenu" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ClickAdminMenuTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.VerifyProductsTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CountriesZonesTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.VerifyProductsTest.testVerifyProducts" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CountriesZonesTest.testCountriesSorting" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ClickAdminLeftMenu" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ClickAdminLeftMenu.testClickAdminLeftMenu" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.VerifyStickers" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.StickerTests" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.StickerTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.VerifyProductsTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CountriesZonesTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CountriesZonesTest.testCountriesSorting" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.VerifyProductsTest.testVerifyProducts" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ClickAdminMenuTest" />
       </list>
     </recent_temporary>
   </component>
@@ -934,35 +937,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ClickAdminLeftMenu - 2017.07.25 at 17h 24m 49s.xml">
-      <configuration name="ClickAdminLeftMenu" configurationId="JUnit" />
+    <history-entry file="CountriesZonesTest - 2017.07.28 at 22h 00m 55s.xml">
+      <configuration name="CountriesZonesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClickAdminLeftMenu_testClickAdminLeftMenu - 2017.07.25 at 17h 15m 39s.xml">
-      <configuration name="ClickAdminLeftMenu.testClickAdminLeftMenu" configurationId="JUnit" />
+    <history-entry file="CountriesZonesTest - 2017.07.28 at 22h 01m 14s.xml">
+      <configuration name="CountriesZonesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClickAdminLeftMenu_testClickAdminLeftMenu - 2017.07.25 at 17h 15m 59s.xml">
-      <configuration name="ClickAdminLeftMenu.testClickAdminLeftMenu" configurationId="JUnit" />
+    <history-entry file="CountriesZonesTest - 2017.07.28 at 22h 01m 48s.xml">
+      <configuration name="CountriesZonesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClickAdminLeftMenu_testClickAdminLeftMenu - 2017.07.25 at 17h 17m 37s.xml">
-      <configuration name="ClickAdminLeftMenu.testClickAdminLeftMenu" configurationId="JUnit" />
+    <history-entry file="CountriesZonesTest - 2017.07.28 at 22h 02m 55s.xml">
+      <configuration name="CountriesZonesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClickAdminLeftMenu_testClickAdminLeftMenu - 2017.07.25 at 17h 17m 54s.xml">
-      <configuration name="ClickAdminLeftMenu.testClickAdminLeftMenu" configurationId="JUnit" />
+    <history-entry file="CountriesZonesTest - 2017.07.28 at 22h 03m 56s.xml">
+      <configuration name="CountriesZonesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClickAdminLeftMenu_testClickAdminLeftMenu - 2017.07.25 at 17h 18m 26s.xml">
-      <configuration name="ClickAdminLeftMenu.testClickAdminLeftMenu" configurationId="JUnit" />
+    <history-entry file="CountriesZonesTest - 2017.07.28 at 22h 05m 03s.xml">
+      <configuration name="CountriesZonesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClickAdminLeftMenu_testClickAdminLeftMenu - 2017.07.25 at 17h 18m 57s.xml">
-      <configuration name="ClickAdminLeftMenu.testClickAdminLeftMenu" configurationId="JUnit" />
+    <history-entry file="CountriesZonesTest - 2017.07.28 at 22h 08m 11s.xml">
+      <configuration name="CountriesZonesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClickAdminLeftMenu_testClickAdminLeftMenu - 2017.07.25 at 17h 20m 17s.xml">
-      <configuration name="ClickAdminLeftMenu.testClickAdminLeftMenu" configurationId="JUnit" />
+    <history-entry file="CountriesZonesTest - 2017.07.28 at 22h 13m 23s.xml">
+      <configuration name="CountriesZonesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClickAdminLeftMenu_testClickAdminLeftMenu - 2017.07.25 at 17h 22m 55s.xml">
-      <configuration name="ClickAdminLeftMenu.testClickAdminLeftMenu" configurationId="JUnit" />
+    <history-entry file="VerifyProductsTest - 2017.07.29 at 14h 59m 45s.xml">
+      <configuration name="VerifyProductsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClickAdminLeftMenu_testClickAdminLeftMenu - 2017.07.25 at 17h 23m 21s.xml">
-      <configuration name="ClickAdminLeftMenu.testClickAdminLeftMenu" configurationId="JUnit" />
+    <history-entry file="VerifyProductsTest - 2017.07.29 at 14h 59m 58s.xml">
+      <configuration name="VerifyProductsTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -975,29 +978,30 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32785088" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45665962" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45665962" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45614034" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15989584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.134375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19791667" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39852008" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39802632" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1013,7 +1017,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1024,13 +1028,13 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="33" column="10" lean-forward="true" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+        <state relative-caret-position="578">
+          <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminLeftMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminMenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1048,25 +1052,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminLeftMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminLeftMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminMenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
@@ -1084,7 +1070,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminLeftMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminMenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1102,7 +1088,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminLeftMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminMenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1127,7 +1113,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminLeftMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminMenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1152,7 +1138,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminLeftMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminMenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1162,7 +1148,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminLeftMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminMenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1186,7 +1172,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminLeftMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminMenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
@@ -1210,7 +1196,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminLeftMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminMenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
@@ -1234,7 +1220,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminLeftMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminMenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
@@ -1272,7 +1258,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminLeftMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminMenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
@@ -1289,7 +1275,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminLeftMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminMenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
@@ -1306,7 +1292,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminLeftMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminMenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
@@ -1330,7 +1316,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminLeftMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminMenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="38" column="1" lean-forward="false" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
@@ -1369,7 +1355,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1377,40 +1362,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/VerifyStickersTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="221">
+          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/TestBase.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminMenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="74" column="34" lean-forward="false" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/ClickAdminLeftMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="69" lean-forward="true" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+        <state relative-caret-position="546">
+          <caret line="30" column="105" lean-forward="false" selection-start-line="30" selection-start-column="90" selection-end-line="30" selection-end-column="105" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/VerifyStickers.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="1197">
+          <caret line="74" column="33" lean-forward="false" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/CountriesZonesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="61" column="81" lean-forward="false" selection-start-line="61" selection-start-column="81" selection-end-line="61" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/trainings/selenium/VerifyProductsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1491">
+          <caret line="71" column="102" lean-forward="true" selection-start-line="71" selection-start-column="102" selection-end-line="71" selection-end-column="102" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

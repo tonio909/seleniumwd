@@ -8,7 +8,7 @@ import java.util.List;
 
 
 
-public class ClickAdminLeftMenu extends TestBase {
+public class ClickAdminMenuTest extends TestBase {
 
 
     @Test

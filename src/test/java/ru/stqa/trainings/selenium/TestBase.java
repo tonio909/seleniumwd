@@ -73,7 +73,7 @@ public class TestBase {
         */
 
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(500, TimeUnit.MILLISECONDS);
+        driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
     }
 
     @After
@@ -95,5 +95,13 @@ public class TestBase {
 
     public void goToHomepage() {
         driver.navigate().to("http://localhost/litecart/en/");
+    }
+
+    public void openCampaignProductPage() {
+        driver.findElement(By.xpath("//div[@id='box-campaigns']//img[@class='image']")).click();
+    }
+
+    public void goToCountriesPage() {
+        driver.navigate().to("http://localhost/litecart/admin/?app=countries&doc=countries");
     }
 }

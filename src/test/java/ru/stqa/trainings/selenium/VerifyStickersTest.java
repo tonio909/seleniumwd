@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import java.util.List;
 
-public class VerifyStickers extends TestBase {
+public class VerifyStickersTest extends TestBase {
 
     @Test
     public void testVerifyStickers() {
