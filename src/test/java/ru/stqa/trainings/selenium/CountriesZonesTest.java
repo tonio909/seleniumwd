@@ -46,6 +46,7 @@ public class CountriesZonesTest extends TestBase {
     }
 
     @Test
+    @Ignore
     public void testZones() throws InterruptedException {
         //Для тех стран, у которых количество зон отлично от нуля -- открыть страницу этой страны и там проверить, что зоны расположены в алфавитном порядке
         adminLogin();
@@ -54,14 +55,11 @@ public class CountriesZonesTest extends TestBase {
         for (int i = 0; i < countriesSize; i++) {
             List<WebElement> countriesFromPage = driver.findElements(By.xpath("//div[@id='content-wrapper']//tr[@class='row']/td[6]"));
             String countriesWithZones = countriesFromPage.get(i).getAttribute("textContent");
-            if (! countriesWithZones.equals("0")) {
+            if (!countriesWithZones.equals("0")) {
                 int countryId = i + 1;
                 driver.findElement(By.xpath("//div[@id='content-wrapper']//tr[@class='row'][" + countryId + "]/td[7]//i[@class='fa fa-pencil']")).click();
 
-                //
-                List<WebElement> zonesGetFromPage = driver.findElements(By.xpath("//input[contains(@name,'[name]')]"));
-
-                int zonesSize = zonesGetFromPage.size();
+                List<WebElement> zonesGetFromPage = driver.findElements(By.xpath("//table[@id='table-zones']/tbody//td[3]"));
 
                 List<String> zonesListToSort = new ArrayList<String>();
                 List<String> zonesListOriginal = new ArrayList<String>();
@@ -76,7 +74,12 @@ public class CountriesZonesTest extends TestBase {
 
                 Collections.sort(zonesListToSort);
 
+                zonesListOriginal.remove(zonesListOriginal.size() - 1);
+                zonesListToSort.remove(0);
+
                 Assert.assertEquals(zonesListOriginal, zonesListToSort);
+
+                int zonesSize = zonesListToSort.size();
 
                 //Log zones
                 for (int z = 0; z < zonesSize; z++) {
@@ -87,9 +90,45 @@ public class CountriesZonesTest extends TestBase {
                     System.out.println(zonesListToSort.get(z));
                 }
 
-
                 goToCountriesPage();
+
             }
+        }
+    }
+
+    @Test
+    public void testZones2() throws InterruptedException {
+        //зайти в каждую из стран и проверить, что зоны расположены в алфавитном порядке
+        adminLogin();
+        goToZonesPage();
+        int geoZonesSize = driver.findElements(By.xpath("//tr[@class='row']/td[4]")).size();
+        for (int i = 0; i < geoZonesSize; i++) {
+            int countryWithGeoZoneId = i + 1;
+            driver.findElement(By.xpath("//tr[@class='row'][" + countryWithGeoZoneId + "]/td[5]//i[@class='fa fa-pencil']")).click();
+
+            int geoZonesListSize = driver.findElements(By.xpath("//a[@id='remove-zone']/i[@class='fa fa-times-circle fa-lg']")).size();
+            for (int z = 0; z < geoZonesListSize; z++) {
+
+                //Работаем с выпадающими в цикле
+                List<WebElement> geoZonesList = driver.findElements(By.xpath("//form/table[@id='table-zones']/tbody//td[3]/select"));
+
+                List<String> geoZonesListToSort = new ArrayList<String>();
+                List<String> geoZonesListOriginal = new ArrayList<String>();
+
+                for (WebElement w : geoZonesList) {
+                    geoZonesListOriginal.add(w.getText());
+                }
+
+                for (WebElement w : geoZonesList) {
+                    geoZonesListToSort.add(w.getText());
+                }
+
+                Collections.sort(geoZonesListToSort);
+
+                Assert.assertEquals(geoZonesListOriginal, geoZonesListToSort);
+
+            }
+            goToZonesPage();
         }
     }
 }

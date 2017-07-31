@@ -104,4 +104,8 @@ public class TestBase {
     public void goToCountriesPage() {
         driver.navigate().to("http://localhost/litecart/admin/?app=countries&doc=countries");
     }
+
+    public void goToZonesPage() {
+        driver.navigate().to("http://localhost/litecart/admin/?app=geo_zones&doc=geo_zones");
+    }
 }
