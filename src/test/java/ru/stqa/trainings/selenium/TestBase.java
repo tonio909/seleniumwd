@@ -72,7 +72,7 @@ public class TestBase {
         wait = new WebDriverWait(driver, 10);
         */
 
-        driver = new ChromeDriver();
+        driver = new EdgeDriver();
         driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
     }
 
@@ -107,5 +107,19 @@ public class TestBase {
 
     public void goToZonesPage() {
         driver.navigate().to("http://localhost/litecart/admin/?app=geo_zones&doc=geo_zones");
+    }
+
+    public void navigateToCreateAccountPage() {
+        driver.navigate().to("http://localhost/litecart/en/create_account");
+    }
+
+    public void logOutFromUserProfile() {
+        driver.findElement(By.xpath("//div[@id='box-account']//li[4]/a")).click();
+    }
+
+    public void login(String loginName, String password) {
+        driver.findElement(By.name("email")).sendKeys(loginName);
+        driver.findElement(By.name("password")).sendKeys(password);
+        driver.findElement(By.name("login")).click();
     }
 }
