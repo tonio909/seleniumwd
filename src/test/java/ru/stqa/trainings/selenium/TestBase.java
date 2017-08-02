@@ -72,7 +72,7 @@ public class TestBase {
         wait = new WebDriverWait(driver, 10);
         */
 
-        driver = new EdgeDriver();
+        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
     }
 
