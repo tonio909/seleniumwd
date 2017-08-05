@@ -74,6 +74,7 @@ public class TestBase {
 
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
+        WebDriverWait wait = new WebDriverWait(driver, 10/*seconds*/);
     }
 
     @After

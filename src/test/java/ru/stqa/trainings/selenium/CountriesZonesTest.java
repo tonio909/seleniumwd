@@ -12,7 +12,6 @@ import java.util.List;
 public class CountriesZonesTest extends TestBase {
 
     @Test
-    @Ignore
     public void testCountriesSorting() {
         //Проверить, что страны расположены в алфавитном порядке
         adminLogin();
@@ -46,7 +45,6 @@ public class CountriesZonesTest extends TestBase {
     }
 
     @Test
-    @Ignore
     public void testZones() throws InterruptedException {
         //Для тех стран, у которых количество зон отлично от нуля -- открыть страницу этой страны и там проверить, что зоны расположены в алфавитном порядке
         adminLogin();
