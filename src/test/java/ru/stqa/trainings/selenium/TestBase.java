@@ -21,11 +21,14 @@ import java.util.concurrent.TimeUnit;
 
 public class TestBase {
 
-    public WebDriver driver;
-    public WebDriverWait wait;
+    WebDriver driver;
+    WebDriverWait wait;
 
     @Before
     public void start() {
+
+        driver = new ChromeDriver();
+        wait = new WebDriverWait(driver, 10);
 
         //Command line options
         /*
@@ -72,16 +75,15 @@ public class TestBase {
         wait = new WebDriverWait(driver, 10);
         */
 
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
-        WebDriverWait wait = new WebDriverWait(driver, 10/*seconds*/);
     }
+
 
     @After
     public void stop() {
         driver.quit();
         driver = null;
     }
+
 
     public void adminLogin() {
         driver.navigate().to("http://localhost/litecart/admin/");
