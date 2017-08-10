@@ -16,7 +16,7 @@ public class CartTest extends TestBase {
         int numberOfProductsToAddToCart = 3;
 
         goToHomepage();
-        
+
         int numberOfProducts = driver.findElements
                 (By.xpath("//div[@id='box-most-popular']//li[@class='product column shadow hover-light']/a[@class='link']")).size();
 
