@@ -1,10 +1,9 @@
 package ru.stqa.trainings.selenium;
 
+import com.google.common.io.Files;
 import org.junit.After;
 import org.junit.Before;
-import org.openqa.selenium.By;
-import org.openqa.selenium.HasCapabilities;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxBinary;
@@ -14,20 +13,56 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.events.AbstractWebDriverEventListener;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class TestBase {
 
-    WebDriver driver;
-    WebDriverWait wait;
+    public static ThreadLocal tlDriver = new ThreadLocal<>();
+    public EventFiringWebDriver driver;
+    public WebDriverWait wait;
+
+    //Протоколирование:
+    public static class MyListener extends AbstractWebDriverEventListener {
+        @Override
+        public void beforeFindBy(By by, WebElement element, WebDriver driver) {
+            System.out.println(by);
+        }
+
+        @Override
+        public void afterFindBy(By by, WebElement element, WebDriver driver) {
+            System.out.println(by +  " found");
+        }
+
+        @Override
+        public void onException(Throwable throwable, WebDriver driver) {
+            System.out.println(throwable);
+
+            //Скриншоты:
+            File tempFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            File screen = new File("screenshots/screen-" + System.currentTimeMillis() + ".png");
+            try {
+                Files.copy(tempFile, screen);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            System.out.println(screen);
+            //Конец скриншотов
+        }
+    }
+    //Конец протоколирования
 
     @Before
     public void start() {
 
-        driver = new ChromeDriver();
+        driver = new EventFiringWebDriver(new ChromeDriver());
+        driver.register(new MyListener());
+        tlDriver.set(driver);
         wait = new WebDriverWait(driver, 10);
 
         //Command line options
@@ -61,7 +96,7 @@ public class TestBase {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(FirefoxDriver.MARIONETTE, false);
         driver = new FirefoxDriver(
-                new FirefoxBinary(new File("C:\\Program Files\\Nightly\\firefox.exe")),
+                new FirefoxBinary(new File("C:\\Program Files\\Mozilla Firefox ESR\\firefox.exe")),
                 new FirefoxProfile(), caps);
         wait = new WebDriverWait(driver, 10);
         */
@@ -74,7 +109,6 @@ public class TestBase {
                 new FirefoxProfile(), caps);
         wait = new WebDriverWait(driver, 10);
         */
-
     }
 
 
